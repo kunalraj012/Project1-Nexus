@@ -3,44 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Up</title>
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Login Account</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <form action="">
-            <h1>Sign Up</h1>
-
-            <div class="input-box">
-                <div class="input-field">
-                    <input type="text" placeholder="Full Name" required/>
-                    <i class='bx bxs-user'></i>
-                </div>
-                <div class="input-field">
-                    <input type="text" placeholder="Username" required/>
-                    <i class='bx bxs-user'></i>
-                </div>
-                <div class="input-field">
-                    <input type="email" placeholder="Email" required/>
-                    <i class='bx bxl-gmail'></i>
-                </div>
-                <div class="input-field">
-                    <input type="number" placeholder="Phone Number" required/>
-                    <i class='bx bxs-phone'></i>
-                </div>
-                <div class="input-field">
-                    <input type="password" placeholder="Password" required/>
-                    <i class='bx bxs-lock-alt'></i>
-                </div>
-                <div class="input-field">
-                    <input type="password" placeholder="Confirm Password" required/>
-                    <i class='bx bxs-lock-alt'></i>
-                </div>
+    <main>
+        <div class="left-side">
+            <h1>Login using social media account to get quick access</h1>
+            <div class="btn-group">
+                <button class="btn">
+                    <ion-icon class="logo" name="logo-facebook"></ion-icon>
+                <span>Continue with Facebook</span></button>
+                <button class="btn">
+                    <ion-icon class="logo" name="logo-google"></ion-icon><span>Continue with Google</span></button>
+                <button class="btn">
+                    <ion-icon class="logo" name="logo-github"></ion-icon>
+                <span>Continue with Github</span></button>
             </div>
-            <label><input type="checkbox" />I hereby declare that the above infomation provided is true and correct</label>
-            <button type="submit" class="btn">Sign Up</button>
-        </form>
-    </div>
+        </div>
+        <div class="right-side">
+            <div class="title">
+                <h1>Login to your account</h1>
+                <p>Don't have an account? <a href="">Sign Up free</a></p>
+            </div>
+            <form>
+                <label for="email">Email</label>
+                <input type="email" name="email" placeholder="Enter your Email" required />
+
+                <label for="password">Password</label>
+                <input type="password" name="password" placeholder="Enter your Password" required />
+
+                <button type="submit" class="btn login-btn">Login</button>
+
+                <div class="links">
+                    <label class="container">
+                        <input type="checkbox" /> Remember Me
+                        <span class="checkmark"></span>
+                    </label>
+                    <a href="#">Forget password</a>
+                </div>
+            </form>
+        </div>
+    </main>
+
+
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script> 
 </body>
 </html>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Account</title>
+    <title>Registration Page</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -21,35 +21,38 @@
                 <span>Continue with Github</span></button>
             </div>
         </div>
+
         <div class="right-side">
             <div class="title">
-                <h1>Login to your account</h1>
-                <p>Don't have an account? <a href="/registration.html">Sign Up free</a></p>
+                <h1>Registor your account</h1>
+                <p>Already have an account? <a href="/index.html">Sign In</a></p>
             </div>
             <form>
+                <label for="username">Username</label>
+                <input type="text" name="username" placeholder="Enter username" required>
+                
                 <label for="email">Email</label>
                 <input type="email" name="email" placeholder="Enter your Email" required />
 
                 <label for="password">Password</label>
                 <input type="password" name="password" placeholder="Enter your Password" required />
+                <label for="re-password">Re Enter your Password</label>
+                <input type="password" name="re-password" placeholder="Re Enter your Password" required />
 
-                <button type="submit" class="btn login-btn">Sign In</button>
+                <button type="submit" class="btn login-btn">Sign Up</button>
 
                 <div class="links">
                     <label class="container">
                         <input type="checkbox" /> Remember Me
                         <span class="checkmark"></span>
                     </label>
-                    <a href="#">Forget password</a>
                 </div>
+                <p class="footer">By creating this account, you agree to our <a href="">Privacy Policy</a>  & <a href="">Cookie Policy</a>.</p>
             </form>
         </div>
     </main>
 
-
-
-
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script> 
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>

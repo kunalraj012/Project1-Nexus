@@ -235,3 +235,9 @@ label{
     -webkit-transform: rotate(45deg);
 
 }
+
+.footer{
+    margin: auto 60px;
+    margin-top: 15px;
+    font-size: 12px;
+}
